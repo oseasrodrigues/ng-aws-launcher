@@ -1,0 +1,21 @@
+<h5>Login</h5>
+
+<div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="ngCredentials.accessKeyId" id="accessKeyId" type="text" class="validate">
+      <label class="active" for="accessKeyId">AccessKeyId</label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="ngCredentials.secretAccessKey" id="secretAccessKey" type="password" class="validate">
+      <label class="active" for="secretAccessKey">SecretAccessKey</label>
+    </div>
+</div>
+
+<button class="btn waves-effect waves-light" 
+    type="submit" name="action" (click)="login()">
+    Login
+    <i class="material-icons right">login</i>
+</button>
