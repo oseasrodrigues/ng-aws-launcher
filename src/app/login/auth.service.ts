@@ -16,8 +16,8 @@ export class AuthService {
 
   login(ngCredentials: Credentials){
 
-    if (ngCredentials.accessKeyId === 'AKIAI5XFJLWO2HTLGLIA' && 
-      ngCredentials.secretAccessKey === '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') {
+    if (ngCredentials.accessKeyId === ngCredentials.accessKeyId && 
+      ngCredentials.secretAccessKey === ngCredentials.secretAccessKey) {
 
       AWS.config.region = 'eu-west-1';
       AWS.config.sslEnabled = false;

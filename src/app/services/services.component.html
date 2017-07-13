@@ -1,7 +1,9 @@
 <h5>AWS Services List</h5>
-
+<div class="collection">
 <ul>
   <li *ngFor="let service of services">
-    {{ service }}
+    <a href="#!" class="collection-item" [routerLink]="['/services', service]">{{ service }}</a>
   </li>
 </ul>
+</div>
+
